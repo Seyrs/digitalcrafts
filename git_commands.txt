@@ -1,0 +1,8 @@
+git status #tells us which files ro push up
+
+git add -A #Adds all the files to be saved
+
+git commit -m "Description of what changes" # Describes how rthe files were changed
+
+git push origin master #Saves the files to git
+
