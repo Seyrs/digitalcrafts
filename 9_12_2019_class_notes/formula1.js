@@ -25,6 +25,7 @@ z = x * y;
 
 var arpa = 5;
 var grossMargin = 8;
-var ltv = arpa * grossMargin;
+var ccr = 2;
+var ltv = (arpa * grossMargin)/ccr;
 console.log(ltv);
  
