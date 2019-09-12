@@ -1,0 +1,3 @@
+cp -- copy file
+
+mv -- move or rename a file
