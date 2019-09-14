@@ -6,3 +6,10 @@ git commit -m "Description of what changes" # Describes how rthe files were chan
 
 git push origin master #Saves the files to git
 
+git checkout -b [branch_name] #creates a new branch
+
+git branch #tells us branch we are in
+
+git checkout [branch_name] #switch between branches
+
+git pull origin [branch_name] #pull the latest changes

@@ -1,3 +1,20 @@
 cp -- copy file
 
 mv -- move or rename a file
+
+
+***VARIABLE TYPES****
+
+
+integer - whole number -32000 ----- 323000
+double - -32000.01 -----32300.10 example 3.14
+float more precise decimals example 3.1419687
+
+char -- single character
+string -- #text ex. "Hello World" (made up of characters)
+char -- #single character ex. "c"
+boolean -- #true or false // 1 or 0 //yes or no
+
+Data Structure
+
+
