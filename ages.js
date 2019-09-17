@@ -1,57 +1,88 @@
-//**** attempt 1*****
-//var s = true;
-//var b = true;
-//var h = true;
-//var k = false;
-//age = 16;
-//fucntion canDrive() {
-//if ( >= age) {
-//	return true;
-//}
-//else {
-//	return false;
-//}
-//}
-//console.log (if 1, "Sarah is old);
 
 
+// ********** ATTEMPT 3****************	
 
-
-
-
-
-//********** ATTEMPT 2****************	
-
-var sarah = function(age) {
-	if (age>=16) {
+var ableToDrive = function(age) {
+	if (age > 15) {
 	return true;
-}	else {
+} else {
 	return false;
-};
-if (sarah (age) == 1) {
-	console.log("Sarah is old enough to drive.");
-}	else{
-	console.log("Sarah isn't old enough to drive.");
-}
-//********fail again*********
-
-
-
-
-
-// Above and Below Incomplete
-
-
-function drink() {
-
 }
 
-function rent() {
-
+var ableToRentCar = function(age) {
+	if (age > 24) {
+	return true;
+} else {
+	return false;
 }
 
-function play() {
+var ableToDrink = function(age) {
+	if (age > 20) {
+	return true;
+} else {
+	return false;
+}
 
+var canPlayInBallPit = function (age) {
+	if (age < 11) {
+	return true;
+} else {
+	return false;
 }
 
 
+var answerArray = [];
+
+var ageCheck = function(name, age) {
+
+var sayThis = "";
+
+// for driving requirement
+
+if (ableToDrive(age)) {
+	sayThis = name + " is old enough to drive.";
+}
+ else { sayThis = name + " is not old enough to drive.";
+}
+	answerArray.push(sayThis);
+
+
+// for car rental requirement
+
+if (ableToRentCar(age)) {
+	sayThis = name + " is old enough to rent a car.";
+}
+ else { sayThis = name + " is not old enough to rent a car.";
+}
+	answerArray.push[sayThis];
+
+
+// for drinking age requirement
+
+if (ableToDrink(age)) {
+	sayThis = name + " is old enough to drink.";
+}
+ else { sayThis = name + " is not old enough to drink.";
+}
+	answerArray.push[sayThis];
+
+
+// for ball pit requirement
+
+if (canPlayInBallPit(age)) {
+	sayThis = name + " is still at eligible age for ball pit.";
+}
+ else { sayThis = name + " is too old to play in ball pit.";
+} 
+	answerArray.push[sayThis];
+
+}
+
+
+ageCheck("Sarah", 35);
+ageCheck("Bob", 21);
+ageCheck("Henry", 17);
+ageCheck("Katie", 9);
+
+}
+	console.log(answerArray);
