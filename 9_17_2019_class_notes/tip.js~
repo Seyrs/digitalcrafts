@@ -1,0 +1,65 @@
+
+
+
+// variables for server activities
+
+var greet = 1;
+var breadWater = 1;
+var refill = 1;
+var foodOkay = 1;
+var prompt = 1;
+
+****** serverAct = ["greet", "bread", "refill", "food quality", "prompt"];
+var actOne = serverAct[0];
+var actTwo = serverAct[1];
+var actThree = serverAct[2];
+var actFour = serverAct[3];
+var actFive = serverAct[4];
+
+	
+
+
+// variable for sum of activities
+
+var totalPoints = greet + breadWater + refill + foodOkay + prompt;
+var bill =[];
+var tip = 0;
+var tipPercent = function(bill, totalPoints) {
+
+
+// conditions for amount of points
+
+for(i=0,i>= serverAct.length, i++) {
+	if
+
+
+
+
+	
+  if (bill, totalPoints ==0);
+	return "1% tip", .01 * bill; {
+ 	    else (bill, totalPoints ==1);
+	return "2% tip" .02 * bill; {
+	    else (bill, totalPoints ==2);
+	return "4% tip", .04 * bill; {
+	    else (bill, totalPoints ==3);
+	return "7% tip" .07 * bill; {
+	    else (bill, totalPoints ==4);
+	return "5% tip" .05 * bill; {
+	    else (bill, totalPoints ==5);
+	return "15% tip", .15 * bill;
+ 
+}
+	console.log(tipPercent);	
+
+****incomplete****
+
+
+
+
+
+
+
+
+**********************************
+// if(greet == 1 && breadWater == 1 && 
