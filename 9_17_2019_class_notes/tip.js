@@ -50,19 +50,18 @@ var bill = 50.00;
 var tip = 0;
 
 var tipPercent = function(bill, totalPoints) {
-	return bill * tip
 
   	if (totalPoints ==0) {
 		return "1% tip" + .01 * bill; 
   } else if (totalPoints ==1) {
 		return "2% tip" + .02 * bill; 
   } else if (totalPoints ==2) {
-		return "4% tip" +  .04 * bill; 
-  } else if (totalPoints ==3);
+		return "4% tip" + .04 * bill; 
+  } else if (totalPoints ==3); {
 		return "7% tip" + .07 * bill; 
-  } else if (totalPoints ==4);
+  } else if (totalPoints ==4); {
 		return "5% tip" + .05 * bill; 
-  } else if (totalPoints ==5);
+  } else if (totalPoints ==5); {
 		return "15% tip" + .15 * bill;
  
 }
