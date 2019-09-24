@@ -21,3 +21,4 @@ var search = function(haystack, needle) {
 	 
 var result = search(items, findItem);
 	console.log (result);
+}
