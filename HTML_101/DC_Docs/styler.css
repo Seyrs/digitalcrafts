@@ -81,11 +81,18 @@ h5 {
         font-weight: 400;
         text-decoration: none;
 }
+span.site-title{
+        font-size: 36px;
+        color: black;
+        padding-left: 20px;
+}
 .head-top {
         color: gray;
         font-size: 14px;
         text-align: left;
 }
+
+
 .paragragph1 {
         font-size: 14;
 }
@@ -97,11 +104,17 @@ h5 {
         border-top-width: 0;
         border-bottom-width: 0;
         border-right-width: 0;
-        padding-left: 20;
-        margin: auto;
+        padding-left:  30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        line-height: 10px;
         color: gray;
-        text-align: center;    
-        font-style: italic
+  
+        font-style: italic;
+}
+span.quote {
+        font-size: 40px;
 }
 .paragraph2 {
         font-size: 14;
