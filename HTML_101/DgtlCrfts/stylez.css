@@ -1,0 +1,129 @@
+html {
+    width: 900;
+}
+
+header {
+    background-image: url(///Users/seymourscott/DC/html_css_bootcamp/DgtlCrfts/img/atl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+header li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 8;
+    color: white;
+    margin-right: 200;
+    margin-left: 30;
+    
+    
+}
+
+header li a {
+    color: gray;
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    padding-top: 20;
+
+}
+.head-text {
+    font-size: 14;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: 300;  
+    text-align: center;
+
+}
+h1 {
+    font-size: 18;
+}
+
+body {
+    text-align: center;
+    display: inline;
+    background-color: rgb(226, 226, 226);
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    font-size: 14;
+}
+.line  {
+        text-align: center;
+        font: 14;
+
+}
+.pieces  {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 10px 40px;
+}
+.pieces li {
+    list-style: none;
+    
+}
+.symbol {
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+.symbol li {
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.hashtag li {
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+.moolah {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.moolah li {
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+footer {
+    background: #555;
+      
+        color: gray;
+}
+footer li {
+        background: #555;
+      
+        color: gray;
+        text-decoration: none;
+       
+        Margin-left: 0;
+        list-style-type: none;
+        border: #555;
+        display: inline;
+        text-align: center;
+
+}
+footer li a {
+    color: rgb(190, 186, 186);
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    padding-top: 20;
+
+}
+.copyright {
+    text-align: center;
+  
+    font-size: 12px;
+    color: #888;
+    padding: 30;
+}
