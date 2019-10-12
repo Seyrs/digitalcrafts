@@ -1,0 +1,40 @@
+/**
+ * TicTacToe
+ * 
+ * The following is an application for creating a TicTacToe
+ * game in javacscript.
+ * 
+ * - Functions -
+ * Please review the following functions that are used throughout
+ * this solution.
+ * 
+ * document - https://www.w3schools.com/js/js_htmldom_document.asp
+ * getElementById - https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+ * createElement - https://www.w3schools.com/jsref/met_document_createelement.asp
+ * appendChild - https://www.w3schools.com/jsref/met_node_appendchild.asp
+ * innerHtml - https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+ * split - https://www.w3schools.com/jsref/jsref_split.asp
+ * alert - https://www.w3schools.com/jsref/met_win_alert.asp
+ * onlclick - https://www.w3schools.com/jsref/event_onclick.asp
+ * 
+ * - Grid System -
+ * The grid system is a multi-dimensional array. Please read here on
+ * multidimensional arrays: 
+ * https://www.javascripttutorial.net/javascript-multidimensional-array/
+ * 
+ * In our use case, the board is a multi-dimensional array as such:
+ * 
+ * ******************
+ *  0,0 | 0,1 | 0,2 *
+ * ******************
+ *  1,0 | 1,1 | 1,2 *
+ * ******************
+ *  2,0 | 2,1 | 2,2 *
+ * ******************
+ * 
+ * Think of the numbers in the grid as coordinates. Calling 1,1
+ * with boardData[1][1] will give you access to the block at the
+ * center of the grid. Each space on the board can be accessed
+ * with the corresponding coordinate.
+ * 
+ */

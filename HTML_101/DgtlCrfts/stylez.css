@@ -76,14 +76,14 @@ h2 {
         padding-top: 40px;
 }
 .pieces  {
-    
+    justify-content: flex-start;
     text-align: center;
     align-content: center;
     padding: 10px 40px;
 }
 .pieces li {
     list-style: none;
-    display: inline;
+    display: inline-flex;
 }
 .symbol {
     text-decoration: none;
@@ -94,13 +94,13 @@ h2 {
 .symbol li {
     text-decoration: none;
     list-style: none;
-    
+    display: inline-flex;
 }
 
 .hashtag li {
     text-decoration: none;
     list-style: none;
-   
+    display: inline-flex;
 }
 
 .moolah {
@@ -112,7 +112,7 @@ h2 {
 .moolah li {
     text-decoration: none;
     list-style: none;
-   
+    display: inline-flex;
 }
 
 footer {
