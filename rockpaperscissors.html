@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS by SEY</title>
+</head>
+<body>
+    
+    <div class="d-inline-flex p-2 bd-highlight">
+        <div class ="buttonclass">
+            <div id ="rock">
+                <button onclick="countdown(rock)">Rock</button>
+            </div>
+            <div id= "paper">
+                <button onclick="countdown(paper)">Paper</button>
+            </div>
+            <div id= "scissors">
+                <button onclick="countdown(scissors)">Scissors</button>
+            </div>
+        </div>
+        </div>
+        
+</body>
+
+<script type="text/javascript">
+
+
+/*
+rock>scissors
+scissors>paper 
+paper>rock
+*/
+
+var choices = [
+    "rock",
+    "paper",
+    "scissors"
+]
+
+var myChoiceRock = function() {
+    document.getElementById(rock);
+    return "Rock"};
+var myChoicePaper = function(){
+    document.getElementById(paper);
+    return "paper"};
+var myChoiceScissors = function() {
+    document.getElementById(scissors);
+    return "scissors"};
+
+
+var win = "You Won";
+var lose = "You Lost";
+var tie = "TIE"
+
+
+var computerChoice= choices[Math.floor(Math.random()*choices.length)];
+
+
+        var compare = function(){
+               if(computerChoice=="rock" && myChoicePaper) {
+                return win;
+               }else if(computerChoice=="rock" && myChoiceRock) {
+                   return tie;       
+                }else if(computerChoice=="rock" && myChoiceScissors){
+                    return lose; 
+                }else if(computerChoice="paper" && myChoicePaper) {
+                    return tie; 
+                } else if(computerChoice=document.getElementsByClassName(paper))
+                   
+            
+        var compareResult = compare()
+
+            function countdown() {
+            setTimeout(function(){ 
+                alert(computerChoice); 
+            }, 1000);
+        }
+
+
+    }
+    
+
+
+</script>
+</html>

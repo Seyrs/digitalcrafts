@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     
+      <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+      <header>
+          <h1>Rock Paper Scissors Game</h1>
+      </header>
+      <div class="score-board">
+          <h3>Score-board</h3>
+      <br />
+          <div id="user-label" class="label">user: <span id="user-score">0</span></div>
+          <div id="computer-label" class="label">computer: <span id="computer-score">0</span></div>
+      </div>
+      <br />
+      <div class="buttonclass"  id="choices">
+              <div class="button" onclick="countdown()" id="rock"><button>rock</button></div>
+              <div class="button" onclick="countdown()"  id="paper"><button>paper</button></div>
+              <div class="button" onclick="countdown()"  id="scissors"><button>scissors</button></div>
+      </div>
+      <br />
+      <div class="result"><p>X beats Y</p></div>
+        <p class= "Go"></p>
+        <ul id="mylist"></ul>
+  </body>
+  <script type = "text/javascript">
+
+    var user_score = 0;
+    var computer_score = 0;
+    var userCounter = document.getElementById("user-score");
+    var computerCounter = document.getElementById("computer-score");
+    var rock_choice = document.getElementById("rock");
+    var paper_choice = document.getElementById("paper");
+    var scissors_choice = document.getElementById("scissors");
+    var result = document.querySelector("div.result > p");
+
+function computerTurn() {
+  var Array = ["rock","paper","scissors"];
+  var randomChoice = Math.floor(Math.random() * Array.length);
+  return Array[randomChoice];
+}
+computerTurn();
+ function userTurn(userChoice) {
+   var computerChoice = computerTurn();
+      if(userChoice == "rock" && computerChoice == "scissors" || userChoice == "paper" && computerChoice == "rock" || userChoice == "scissors" && computerChoice == "paper") {
+           user_score++;
+           computer_score;
+           userCounter.innerHTML = user_score;
+           computerCounter.innerHTML = computer_score;
+           result.innerHTML = userChoice + "  beats  " + computerChoice;
+      } else if
+      (userChoice == "scissors" && computerChoice == "rock" || userChoice == "rock" && computerChoice == "paper" || userChoice == "paper" && computerChoice == "scissors") {
+          computer_score++;
+          user_score;
+          userCounter.innerHTML = user_score;
+          computerCounter.innerHTML = computer_score;
+          result.innerHTML = computerChoice + "  beats  " + userChoice;
+      } else if
+      (userChoice == "rock" && computerChoice == "rock" || userChoice == "paper" && computerChoice == "paper" || userChoice == "scissors" && computerChoice == "scissors") {
+           computer_score
+      user_score;
+           result.innerHTML = " It is a tie ";
+      }
+}
+
+userTurn();
+  function userClick(myInterval) {
+      rock_choice.addEventListener('click', function() {
+      userTurn("rock");
+      })
+      paper_choice.addEventListener('click', function() {
+      userTurn("paper");
+      })
+      scissors_choice.addEventListener('click', function() {
+      userTurn("scissors");
+      })
+  }
+  
+ 
+     
+    var listElement = document.getElementById("mylist");
+    var timer = ["1", "2", "3", "4"];
+
+    var myInterval = setInterval(function(){
+
+        var time = timer.slice(3);
+    if(timer.length>0) {
+        listElement.append(" " + time + " ")
+          clearInterval(myAnimalInterval)
+
+    }; 2000;
+}
+    )
+
+    var dime = timer.slice(2);
+      if(timer.length>0) {
+          listElement.append(" " + dime + " ")
+    
+} then
+  
+
+    var lime = timer.slice(1);
+      if(timer.length>0) {
+          listElement.append(" " + lime + " ")
+   
+}then
+    
+    var mime = timer.slice(0) 
+      if(timer.length>0) {
+        listElement.append(" " + mime + " ")
+  
+}
+
+    
+    
+  </script>
+</html>
+

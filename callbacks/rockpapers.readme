@@ -1,0 +1,13 @@
+/*
+For the next assignment, we are going to make a game of Rock Paper, Scissors. The game should have the following attributes:
+- Two players, one player is the computer. The other player is the user.
+- 4 Count. Meaning, there should be some indication of Rock, Paper, Scissor countdown
+- The user and the computer should have the choices of Rock, Paper, Scissors to choose from
+- Winning Conditions ( Scissor bears paper, Paper beats rock, rock beats scissors, tie)
+Think about how the different parts translate to code. Think of what is might each part sounds like?
+- 4 Count might be an interval, and at 0 requires the user to have made a choice
+- The winning conditions might sound like if statement
+- The computer choosing an item sounds like randomly selecting an item
+Please work in PAIRS to complete this assignment. We will have the end of this class and some time next class to complete it. The final solution should be a webpage 
+that is a playable game. Reference all notes from our previous assignments. 
+*/
