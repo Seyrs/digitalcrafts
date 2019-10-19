@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Social Feed</title>
-        <link rel="stylesheet" type="text/css" href="/Users/seymourscott/DC/socialFeed/styles2.css"/>
- </head>
- <header>
-     <div class="name">
-     <h1> Media</h1>
-    </div>
- </header>
- <body>
-   <form>
-     <label> UserName:
-       <input type="text" id="username" placeholder="USERNAME?">
-     </label>
-     <br />
-     <br />
-     <label> Web Address:
-       <input type="url" id="url" src="" width= "107" height= "98" placeholder="Link?"></label>
-       <br />
-       <br />
-     <label>Submit additional information:
-     <br />
-     <br />
-       <textarea id="txt" name="txt" rows="10" cols="100" wrap="virtual" placeholder="Say something!" maxlength="100"></textarea></label>
-     <br />
-     <br />
-       <input type="button" value="Click me" onclick="submitText();" name="btn" id="btn">
-       <input type="reset" value="reset" id="reset">
-   </form>
-     <br />
-     <div id= "output">
-     <p id="pText"></p>
-    </div>
-
+   <head>
+       <title>Social Feed</title>
+       <link rel="stylesheet" type="text/css" href="styles2.css" />
+</head>
+<header>
+  <h1>El es Social</h1>
+</header>
+<body>
+  <form>
+    <label> Username:
+      <input type="text" id="username" placeholder="username" name="USERNAME">
+    </label>
+    <br />
+    <br />
+    <label> Image/Link:
+      <input type="url" width="" height="" id="url" name="URL"></label>
+      <br />
+      <br />
+    <label>Submit additional information:
+    <br />
+    <br />
+      <textarea id="txt" name="txt" rows="10" cols="100" wrap="virtual" placeholder="Enter your text" maxlength="100"></textarea></label>
+    <br />
+    <br />
+      <input type="button" value="Click me" onclick="getData();" name="btn" id="btn">
+      <input type="reset" value="reset" id="reset">
+  </form>
+    <br />
+    <div id="output">
+  </div>
 <script type = "text/javascript">
 
     var getText = [];
