@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SocialFeed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/seymourscott/DC/socialFeed/styles.css">
+</head>
+<body>
+<div id= "feedpage">
+     <div id="formElements"> 
+            <button type="button" class="btn btn-success">Post It!</button>
+        </div>
+    
+
+</div>
+<script type="text/javascript">
+var data = {
+            type: "textarea",
+            disabled : false,
+            id : "my-textarea",
+            value : "",
+            style: "background-color: blue;",
+            class : "form-control",
+            maxLength: 255 
+            }
+
+            var x = document.createElement("BUTTON");
+/*
+onclick.button = ""history.push
+clears the box
+*/
+var formContainer = document.getElementById("formElements");
+
+data.forEach(function(item, index){
+    
+    var element = null;
+
+    if(item.type=="textarea") {
+                element = document.createElement("textarea")
+
+            }
+            if(item.class) {
+                element.setAttribute("class", item.class)
+            }
+            if(item.disabled) {
+                element.setAttribute("disabled", "disabled")
+            }
+            if(item.id) {
+                element.setAttribute("id", item.id)
+            }
+            if(item.value) {
+                element.setAttribute("value", item.value)
+            }
+            if(item.style) {
+                element.setAttribute("style", item.style)
+            }
+            if(item.style) {
+                element.setAttribute("max-length", item.maxlength)
+            }
+
+            var formLabel = document.createElement("label")
+            formLabel.innerHTML = "Element " + item.id;
+
+            var hr = document.createElement("hr");
+
+        formContainer.append(formLabel);
+        formContainer.append(element);
+        formContainer.append(hr);
+         
+        var clicks = function()
+        {
+        button.onclick()
+        }
+     });
+    var createHtmlFromObject = function(dataObject) { }
+
+
+
+
+
+
+
+
+
+var history = {};
+
+
+</script>
+    
+</body>
+</html>

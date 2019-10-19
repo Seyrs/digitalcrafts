@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Social Feed</title>
+        <link rel="stylesheet" type="text/css" href="/Users/seymourscott/DC/socialFeed/styles.css"/>
+ </head>
+ <body>
+   <form>
+     <label> UserName:
+       <input type="text" id="username" placeholder="USERNAME">
+     </label>
+     <br />
+     <br />
+     <label> Web Address:
+       <input type="url" id="url" src="" width= "107" height= "98" name="Link?"></label>
+       <br />
+       <br />
+     <label>Submit additional information:
+     <br />
+     <br />
+       <textarea id="txt" name="txt" rows="10" cols="100" wrap="virtual" placeholder="Enter your text" maxlength="100"></textarea></label>
+     <br />
+     <br />
+       <input type="button" value="Click me" onclick="submitText();" name="btn" id="btn">
+       <input type="reset" value="reset">
+   </form>
+     <br />
+     <div id= "content">
+     <p id="pText"></p>
+    </div>
+ <script>
+   var getText = [
+];
+   function submitText() {
+     document.getElementById("txt");
+     var inputText = document.getElementById("txt").value;
+     var inputUrl = document.getElementById("url").value;
+     var inputUserName = document.getElementById("username").value;
+     getText.push(inputUserName);
+     getText.push(inputText);
+     getText.push(inputUrl);
+     var pval = " ";
+     for(i = 0; i < getText.length; i++) {
+         pval = pval + getText[i]+ "<br/>";
+     }
+     document.getElementById("pText").innerHTML=pval;
+     document.getElementById("txt").value = ""
+     document.getElementById("url").value = ""
+   
+   }
+ </script>
+ </body>
+</html>
