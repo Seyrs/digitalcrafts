@@ -1,0 +1,32 @@
+html {
+	background-color: rgb(167, 131, 238);
+}
+.row{
+    background-color: rgb(167, 131, 238);
+}
+ 
+h2 {
+	color: #DC4247;
+}
+h3{	
+	color: #DC4247;
+	font-style: unset;
+	text-decoration: underline;
+}
+.header p {
+	color: #50524F;
+	font-style: unset;
+	text-decoration: underline;
+}
+.results {
+	
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+}
+.movie-card {
+	margin-bottom: 30px;
+}
