@@ -12,6 +12,10 @@ h3{
 	color: #DC4247;
 	font-style: unset;
 	text-decoration: underline;
+	border-style: double;
+	display: inline;
+	border: 2px 2px 2px 2px; 
+	border-color: #DC4247;
 }
 .header p {
 	color: #50524F;
