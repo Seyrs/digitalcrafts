@@ -1,0 +1,26 @@
+body {
+	background-color: rgb(167, 131, 238);
+}
+
+.header h2 {
+	color: #DC4247;
+}
+
+.header p {
+	color: #50524F;
+}
+.row p {
+	font-style: italic;
+}
+.results {
+	
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+}
+.movie-card {
+	margin-bottom: 30px;
+}
