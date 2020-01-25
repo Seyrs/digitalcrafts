@@ -1,0 +1,52 @@
+/* Write a function that takes a string and returns the index of the first brace that breaks its balance
+(or returns the special value -1 if the string is balanced). The first brace that breaks the balance
+is the brace closest to the start of the string that isn’t part of a balanced pair.
+Please state any additional assumptions you make and try to make your function as efficient as
+you can
+Examples of correct behavior for your function:
+Input Expected output 
+hello world -1 Input is balanced
+{} -1 Input is balanced
+{{{foo();}}}{} -1 Input is balanced
+{{}{}} -1 Input is balanced
+{{{} 0 Brace at 0 has no close brace
+} 0 Brace at 0 has no open brace
+{}{foo{} 2 Brace at 2 has no close brace
+
+1. Write a function that takes a string
+2. Iterate through each character in the string
+3. Find the characters that are braces
+4. Determine if equal opening and closing braces
+5. Return the index of the brace that does not close
+
+*Examples of correct behavior for your function:
+Input Expected output *
+hello world    -1      Input is balanced
+{}     -1     Input is balanced
+{{{foo();}}}{}     -1      Input is balanced
+{{}{}}      -1      Input is balanced
+{{{} 0           Brace at 0     has no close brace
+} 0           Brace at 0  has no open brace
+{}{foo{} 2         Brace at 2  has no close brace
+ */
+
+
+
+//attempt 1
+
+
+function findBraces(string) {
+   
+  let openBracketCount = 0;
+  let closingBracketCount = 0;
+
+   for(i=0; i<string.length; i++) {
+	  if(string.charAt(i) == '{'){
+  	  }
+}
+
+
+
+if(openBracketCOunt != closingBracketCount) {
+	// you have a problem
+}
